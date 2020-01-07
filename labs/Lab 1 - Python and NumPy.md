@@ -13,7 +13,7 @@ jupyter:
     name: python3
 ---
 
-# Name(s)
+# Name: Reesa John
 **PUT YOUR FULL NAME(S) HERE**
 
 
@@ -36,7 +36,9 @@ Please read and reference the following as your progress through this course.
 **In the space provided below, what are three things that still remain unclear or need further explanation?**
 
 
-**YOUR ANSWER HERE**
+1. Is there an easy way to move cells around after we have created them?
+2. Can you code in 2 different languages in Jupyter?
+3. Does Jupyter notbook allow you to revert to any checkpoint ever made?
 
 
 ## Exercises 1-7
