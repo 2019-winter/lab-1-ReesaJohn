@@ -47,6 +47,8 @@ For the following exercises please read the Python appendix in the Marsland text
 
 ## Exercise 1
 
+Make an array `a` of size 6x4 where every element is a 2.
+
 ```python
 # YOUR SOLUTION HERE
 #a=1000
@@ -54,6 +56,7 @@ print('this is my answer',a+1)
 ```
 
 ## Exercise 2
+Make an array `b` of size 6x4 that has a 3 on the leading diagonal and 1 everywhere else
 
 ```python
 # YOUR SOLUTION HERE
@@ -61,30 +64,35 @@ a=2000
 ```
 
 ## Exercise 3
+Can you multiply these two matrices together? Why does `a*b` work but not `dot(a,b)`?
 
 ```python
 # YOUR SOLUTION HERE
 ```
 
 ## Exercise 4
+Compute `dot(a.transpose(),b)` and `dot(a,b.transpose())`. Why are the results different shapes?
 
 ```python
 # YOUR SOLUTION HERE
 ```
 
 ## Exercise 5
+Write a function that prints some output on the screen and make sure you can run it in the programming environment that you are using.
 
 ```python
 # YOUR SOLUTION HERE
 ```
 
 ## Exercise 6
+Now write one that makes some random arrays and prints out their sums, the mean value, etc.
 
 ```python
 # YOUR SOLUTION HERE
 ```
 
 ## Exercise 7
+Write a function that consists of a set of loops that run through an array and count the number of ones in it. Do the same thing using the `where()` function.
 
 ```python
 # YOUR SOLUTION HERE
