@@ -44,6 +44,11 @@ Please read and reference the following as your progress through this course.
 ## Exercises 1-7
 For the following exercises please read the Python appendix in the Marsland textbook and answer problems A.1-A.7 in the space provided below.
 
+```python
+#import
+import numpy as np
+import pandas as pd
+```
 
 ## Exercise 1
 
@@ -51,8 +56,8 @@ Make an array `a` of size 6x4 where every element is a 2.
 
 ```python
 # YOUR SOLUTION HERE
-#a=1000
-print('this is my answer',a+1) 
+a=np.full((6,4),2)
+print('this is my answer\n',a) 
 ```
 
 ## Exercise 2
@@ -60,22 +65,33 @@ Make an array `b` of size 6x4 that has a 3 on the leading diagonal and 1 everywh
 
 ```python
 # YOUR SOLUTION HERE
-a=2000
+b=np.full((6,4),1)
+np.fill_diagonal(b,3)
+print('this is my answer\n',b) 
 ```
 
 ## Exercise 3
 Can you multiply these two matrices together? Why does `a*b` work but not `dot(a,b)`?
 
 ```python
-# YOUR SOLUTION HERE
+print('this is my answer\n',a*b) 
+# this will throw an error so I commented it out
+#np.dot(a,b)
 ```
+
+We can do `a*b` because it does elementwise multiplication like `a[r][c]*b[r][c]]`, so it would rely on both matrices possessing the same dimensions which is true of a and b, or one of the variables being a single number. However `dot(a,b)`, which returns the dot product between two arrays, is matrix multiplication in the case of 2d arrays. For the function to work for `a` and `b`, the number of columns of the first matrix needs to be equivalent for the number of rows in the second matrix, which is not true in this case.
+
 
 ## Exercise 4
 Compute `dot(a.transpose(),b)` and `dot(a,b.transpose())`. Why are the results different shapes?
 
 ```python
-# YOUR SOLUTION HERE
+print('this is my answer\n',np.dot(a.transpose(),b)) 
+print('this is my answer\n',np.dot(a,b.transpose())) 
 ```
+
+When we do matrix multiplication, the resulting matrix's dimensions contains the same number of rows as the first matrix and the same number of columns as the second matrix. When we transpose `a`, `a` becomes a 4x6 matrix multiplied to a 6x4 matrix, so the resulting matrix will be 4x4. But when we transpose `b`, `b` becomes a 6x4 matrix multiplied to a 4x6 matrix, so the resulting matrix will be a 6x6 matrix.
+
 
 ## Exercise 5
 Write a function that prints some output on the screen and make sure you can run it in the programming environment that you are using.
